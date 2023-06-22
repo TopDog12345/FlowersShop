@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="7.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.8" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
@@ -15,6 +19,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Slobodianiuk.University.Example.Core\Slobodianiuk.University.Example.Core.csproj" />
     <ProjectReference Include="..\Slobodianiuk.University.Example.Models\Slobodianiuk.University.Example.Models.csproj" />
+    <ProjectReference Include="..\Slobodianuik.University.Example.Database\Slobodianuik.University.Example.Database.csproj" />
   </ItemGroup>
 
 </Project>

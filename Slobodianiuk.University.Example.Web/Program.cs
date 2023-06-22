@@ -1,25 +1,78 @@
+using Microsoft.AspNetCore.Authentication.OAuth;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Slobodianiuk.University.Example.Core;
+using Slobodianuik.University.Example.Database;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.RegisterCoreConfiguration(builder.Configuration);
-builder.Services.RegisterCoreDependencies();
+
+builder.Services.RegisterDatabaseDependencies(builder.Configuration);
+//builder.Services.RegisterIdentityDependencies();
 
 // Add services to the container.
 builder.Services.AddControllers();
-builder.Services.AddRazorPages();
+builder.Services.AddDbContext<FlowersShopDbContext>(options =>
+
+    options
+    .UseLazyLoadingProxies()
+    .UseSqlServer(builder.Configuration.GetConnectionString("ZhukUniversityTachkaWebContext") ?? throw new InvalidOperationException("Connection string 'ZhukUniversityTachkaWebContext' not found.")));
+
+builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<FlowersShopDbContext>().AddDefaultTokenProviders();
+
+
+builder.Services.AddAuthentication();
+    //.AddMicrosoftAccount(microsoftOptions =>
+    //{
+    //    microsoftOptions.ClientId = builder.Configuration["WEBSITE_AUTH_MICROSOFT_CONSUMER_KEY"];
+    //    microsoftOptions.ClientSecret = builder.Configuration["WEBSITE_AUTH_MICROSOFT_CONSUMER_SECRET"];
+    //})
+    //.AddGoogle(googleOptions =>
+    //{
+    //    googleOptions.ClientId = builder.Configuration["Authentication:Google:ClientId"];
+    //    googleOptions.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
+    //    googleOptions.Events = new OAuthEvents()
+    //    {
+    //        OnRemoteFailure = (context) =>
+    //        {
+    //            context.Response.Redirect(context?.Properties?.GetString("returnUrl"));
+    //            context.HandleResponse();
+    //            return Task.CompletedTask;
+    //        }
+    //    };
+    //});
+//.AddTwitter(twitterOptions =>
+//{
+//    twitterOptions.ConsumerKey = builder.Configuration["Authentication:Twitter:ConsumerAPIKey"];
+//    twitterOptions.ConsumerSecret = builder.Configuration["Authentication:Twitter:ConsumerSecret"];
+//});
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddControllersWithViews();
+
+builder.Services.AddRazorPages(options =>
+{
+    options.Conventions.AuthorizeFolder("/");
+});
 
 var app = builder.Build();
+app.MapControllers();
 
 // Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment())
+{
+    app.UseMigrationsEndPoint();
+}
+else
 {
     app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -34,6 +87,9 @@ app.MapRazorPages();
 app.MapControllers();
 
 app.UseSwagger();
-app.UseSwaggerUI();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+});
 
 app.Run();
