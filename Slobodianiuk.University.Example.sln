@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slobodianiuk.University.Example.Web", "Slobodianiuk.University.Example.Web\Slobodianiuk.University.Example.Web.csproj", "{4CC9A013-D8C7-4CAC-AFE2-6DB8C6DB3CEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Slobodianiuk.University.Example.Web", "Slobodianiuk.University.Example.Web\Slobodianiuk.University.Example.Web.csproj", "{4CC9A013-D8C7-4CAC-AFE2-6DB8C6DB3CEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slobodianiuk.University.Example.Core", "Slobodianiuk.University.Example.Core\Slobodianiuk.University.Example.Core.csproj", "{4712F45D-EE90-4027-9E84-6C9B7E1FFDEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Slobodianiuk.University.Example.Core", "Slobodianiuk.University.Example.Core\Slobodianiuk.University.Example.Core.csproj", "{4712F45D-EE90-4027-9E84-6C9B7E1FFDEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slobodianiuk.University.Example.Test", "Slobodianiuk.University.Example.Test\Slobodianiuk.University.Example.Test.csproj", "{A921AC14-52EA-4D5A-99A5-6DCF5DA25B15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Slobodianiuk.University.Example.Test", "Slobodianiuk.University.Example.Test\Slobodianiuk.University.Example.Test.csproj", "{A921AC14-52EA-4D5A-99A5-6DCF5DA25B15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slobodianiuk.University.Example.Models", "Slobodianiuk.University.Example.Models\Slobodianiuk.University.Example.Models.csproj", "{FFD1E09D-CE7D-4528-ADA5-3CE477D7F382}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Slobodianiuk.University.Example.Models", "Slobodianiuk.University.Example.Models\Slobodianiuk.University.Example.Models.csproj", "{FFD1E09D-CE7D-4528-ADA5-3CE477D7F382}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slobodianuik.University.Example.Database", "Slobodianuik.University.Example.Database\Slobodianuik.University.Example.Database.csproj", "{FCDA4DFC-99C2-4477-98A9-35D985216C09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{FFD1E09D-CE7D-4528-ADA5-3CE477D7F382}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFD1E09D-CE7D-4528-ADA5-3CE477D7F382}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFD1E09D-CE7D-4528-ADA5-3CE477D7F382}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCDA4DFC-99C2-4477-98A9-35D985216C09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCDA4DFC-99C2-4477-98A9-35D985216C09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCDA4DFC-99C2-4477-98A9-35D985216C09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCDA4DFC-99C2-4477-98A9-35D985216C09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
