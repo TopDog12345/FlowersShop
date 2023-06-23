@@ -1,8 +1,8 @@
 # Slobodianiuk.University.Example-main
-# [Tachka](https://carsharing.azurewebsites.net)
+# [Flowers](https://carsharing.azurewebsites.net)
 ### Project for `'Web Technology'` course in Lviv National University of Ivan Franko
 Contacts:
-* [Telegram](https://t.me/zhuk_sasha) 
+* [Telegram](https://t.me/blessedbyprincess) 
 * Email: zuks01123@gmail.com
 ## Stack
 * [.NET](https://dotnet.microsoft.com/) - free, open-source, cross-platform framework for building modern apps and powerful cloud services.
