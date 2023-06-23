@@ -3,7 +3,7 @@
 ### Project for `'Web Technology'` course in Lviv National University of Ivan Franko
 Contacts:
 * [Telegram](https://t.me/blessedbyprincess) 
-* Email: zuks01123@gmail.com
+* Email: valera2004vich@gmail.com
 ## Stack
 * [.NET](https://dotnet.microsoft.com/) - free, open-source, cross-platform framework for building modern apps and powerful cloud services.
 * [Azure](https://azure.microsoft.com/) - cloud computing platform and a set of services provided by Microsoft for building, deploying, and managing applications and services through Microsoft-managed data centers.
