@@ -13,6 +13,7 @@ namespace Slobodianuik.University.Example.Database
     public class FlowersShopDbContext : IdentityDbContext
     {
         public DbSet<Flower> Flower { get; set; }
+        public DbSet<Order> Order { get; set; }
         public FlowersShopDbContext() { }
         public FlowersShopDbContext(DbContextOptions<FlowersShopDbContext> options) : base(options) { }
 

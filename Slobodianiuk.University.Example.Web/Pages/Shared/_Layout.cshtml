@@ -27,7 +27,7 @@
                 </a>
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a asp-area="" asp-page="/Index" class="nav-link px-2 text-gray">FlowerShop</a></li>
-                    <li><a class="nav-link px-2 link-secondary" asp-area="" asp-page="/CarList">Flowers</a></li>
+                    <li><a class="nav-link px-2 link-secondary" asp-area="" asp-page="/FlowerList">Flowers</a></li>
                     <li><a class="nav-link px-2 link-secondary" href="/swagger">Swagger UI</a></li>
                     <li><a asp-area="" asp-page="/Contacts" class="nav-link px-2 link-secondary">About</a></li>
                 </ul>
@@ -37,17 +37,13 @@
 
                 <div class="dropdown text-end">
                     <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                        <img src="https://xsgames.co/randomusers/avatar.php?g=male" alt="mdo" width="32" height="32" class="rounded-circle">
                     </a>
                     <ul class="dropdown-menu text-small">
-                        <li><a class="dropdown-item" asp-area="" asp-page="/CreateCar">Create Car</a></li>
-                        <li><a class="dropdown-item" asp-area="" asp-page="/User/Cars">Your Cars</a></li>
-                        <li><a class="dropdown-item" asp-area="" asp-page="/Orders/Orders">Orders</a></li>
+                        <li><a class="dropdown-item" asp-area="" asp-page="/CreateFlower">Add Flower</a></li>
+                        <li><a class="dropdown-item" asp-area="" asp-page="/Orders">Orders</a></li>
                         <li><a class="dropdown-item" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Settings</a></li>
-                        <li><i class="dropdown-item  bi bi-brightness-high-fill" id="toggleDark"></i></li>
-                        <li>
-
-                        </li>
+                        <li> </li>
                         <partial name="_LoginPartial" />
                         <li><hr class="dropdown-divider"></li>
                         <form class="dropdown-item" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
@@ -68,7 +64,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - Zhuchok Pavuchok - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2023 - Valerchik aka Blessed - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
 

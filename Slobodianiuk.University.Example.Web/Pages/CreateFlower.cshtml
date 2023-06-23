@@ -1,0 +1,35 @@
+﻿@page
+@model Slobodianiuk.University.Example.Web.Pages.CreateFlowerModel
+@{
+}
+<h1>Create Flower</h1>
+
+<div class="container-fluid">
+    <form method="post" enctype="multipart/form-data">
+        <div class="row mb-3">
+            <div class ="col-2 px-2">
+                <label asp-for="Flower.Name"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Flower.Name" class="w-100 form-control" placeholder="Romashka" onfocus="this.placeholder=''" onblur="this.placeholder='Romashka'" />
+                <span asp-validation-for="Flower.Name" class="text-error"></span>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-2 px-2">
+                <label asp-for="Flower.price"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Flower.price" class="w-100 form-control" placeholder="100" onfocus="this.placeholder=''" onblur="this.placeholder='100'" />
+                <span asp-validation-for="Flower.price" class="text-error"></span>
+            </div>
+        </div>
+       
+                
+        <div class="row mt-4 mb-2">
+            <div class="col-3">
+                <input type="submit" class="w-100 form-control" />
+            </div>
+        </div>
+    </form>
+</div>

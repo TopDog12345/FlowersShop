@@ -1,0 +1,22 @@
+﻿@page
+@model Slobodianiuk.University.Example.Web.Pages.FlowerListModel
+@{
+}
+
+<div class="container px-4 py-5" id="custom-cards">
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        @{
+            foreach (var el in Model.Flowers)
+            {
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Name: @el.Name</h5>
+                            <p class="card-text">Price: @el.price $</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
