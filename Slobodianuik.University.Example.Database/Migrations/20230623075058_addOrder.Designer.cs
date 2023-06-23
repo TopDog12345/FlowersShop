@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Slobodianuik.University.Example.Database;
 
@@ -11,9 +12,11 @@ using Slobodianuik.University.Example.Database;
 namespace Slobodianuik.University.Example.Database.Migrations
 {
     [DbContext(typeof(FlowersShopDbContext))]
-    partial class FlowersShopDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230623075058_addOrder")]
+    partial class addOrder
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
