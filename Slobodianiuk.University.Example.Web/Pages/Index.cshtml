@@ -4,18 +4,91 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-
-    <p>
-        Dear students, when working on projects in a solution, it's important to make sure that all project names and namespaces are properly renamed to reflect the content of your work.
-        Please ensure that there are no example project names left in your solution.
-        To simplify this process, I recommend using the "rename solution" and global search features available in Visual Studio.
-    </p>
-        
-    <p>
-        Thank you for taking the time to ensure that your solution is properly named and organized. I wish you all the best with your coding endeavors, and happy coding!
-    </p>
-
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers shop</title>
+    <link property="stylesheet" rel="stylesheet" type="text/css" href="css/reset.css">
+    <link property="stylesheet" rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="canonical" href="http://flowerful-moments.com" />
+</head>
+<body class="page">
+    <header class="header page__header">
+        <div class="logo header__logo">
+            <a href="index.html"><img class="logo__image" src="images/logo.ico" alt="flowerful moments" /></a>
+        </div>
+        <nav class="nav header__nav">
+            <ul class="nav__list">
+                <li class="nav__item nav__item--bold"><a class="nav__link" href="index.html">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="product.html">Product</a></li>
+                <li class="nav__item"><a class="nav__link" href="contacts.html">About</a></li>
+                <li class="nav__item"><a class="nav__link" href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="phone header__phone">
+            <a class="phone__link" href="tel:+984563123500">
+                <svg class="phone__icon" width="21" height="21" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.8101 15.0367L15.584 14.325L12.6067 17.265C9.25287 15.5806 6.52682 12.8886 4.82109 9.57667L7.81012 6.625L7.08944 0.5H0.57974C-0.105492 12.3767 9.78311 22.1417 21.8101 21.465V15.0367Z" fill="#393D50" />
+                </svg>+380 990 579 100
+            </a>
+        </div>
+    </header>
+    <main class="main page__main">
+        <div class="container main__container main__container--active">
+            <div class="container-left container__container-left">
+                <div class="container-left__title">
+                    <h2>Love day<br>14 febfuary</h2>
+                </div>
+                <p class="container-left__p">Flowers always make people better, happier and more helpful; they are sunshine, food, and medicine to the soul.<br><strong>Luther Burbank</strong></p>
+                <a class="container__link" href="product.html"><button type="button" name="buy" class="button container-left__button">Buy flowers</button></a>
+            </div>
+            <div class="container-right container__container-right">
+                <img class="container-right__image" src="images/main1.png" alt="roses" />
+            </div>
+        </div>
+        <div class="container main__container">
+            <div class="container-left container__container-left">
+                <div class="container-left__title">
+                    <h2>We deliver<br>flowers</h2>
+                </div>
+                <p class="container-left__p">Want to make your love<br>sweet and enjoyable?<br>Order flower delivery with<br>a congratulation or recognition!</p>
+                <a class="container__link" href="#"><button type="button" name="about" class="button container-left__button">More details</button></a>
+            </div>
+            <div class="container-right container__container-right">
+                <img class="container-right__image" src="images/bouquet.png" alt="bouquet" />
+            </div>
+        </div>
+        <div class="container main__container">
+            <div class="container-left container__container-left">
+                <div class="container-left__title">
+                    <h2>Reviews</h2>
+                </div>
+                <p class="container-left__p">“These guys are doing their job very well.<br>Delivery with branded chips<br>was remembered for a long time.”<br><strong>Den Begerson</strong></p>
+                <a class="container__link" href="#"><button type="button" name="more" class="button container-left__button">Read more</button></a>
+            </div>
+            <div class="container-right container__container-right">
+                <img class="container-right__image" src="images/roses.png" alt="review" />
+            </div>
+        </div>
+    </main>
+    <button type="button" name="previous" class="left-arrow page__left-arrow" onclick="next(-1)">
+        <svg width="53" height="38" viewBox="0 0 53 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.23223 17.2322C0.255924 18.2085 0.255924 19.7915 1.23223 20.7678L17.1421 36.6777C18.1184 37.654 19.7014 37.654 20.6777 36.6777C21.654 35.7014 21.654 34.1184 20.6777 33.1421L6.53553 19L20.6777 4.85787C21.654 3.88156 21.654 2.29864 20.6777 1.32233C19.7014 0.346023 18.1184 0.346023 17.1421 1.32233L1.23223 17.2322ZM53 16.5L3 16.5L3 21.5L53 21.5L53 16.5Z" fill="#EDE5D8" />
+        </svg>
+    </button>
+    <button type="button" name="next" class="right-arrow page__right-arrow" onclick="next(1)">
+        <svg width="53" height="38" viewBox="0 0 53 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M51.7678 17.2322C52.7441 18.2085 52.7441 19.7915 51.7678 20.7678L35.8579 36.6777C34.8816 37.654 33.2986 37.654 32.3223 36.6777C31.346 35.7014 31.346 34.1184 32.3223 33.1421L46.4645 19L32.3223 4.85786C31.346 3.88155 31.346 2.29864 32.3223 1.32233C33.2986 0.346017 34.8816 0.346017 35.8579 1.32233L51.7678 17.2322ZM-2.2466e-07 16.5L50 16.5L50 21.5L2.2466e-07 21.5L-2.2466e-07 16.5Z" fill="#F56457" />
+        </svg>
+    </button>
+    <div class="container main__container">
+        <div class="footer main__container">
+            <div class="footer__text"><p>Текст у футері</p></div>
+        </div>
+    </div>
+    <script src="js/slider.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+﻿.page__left-arrow {
+    left: 52.57%;
+}
+
+.container-left .container-left__button--small {
+    padding: 36px;
+    border: 4px solid #F56457;
+    background-color: #F7F6F4;
+    color: #F56457;
+}
+
+.container-left .container-left__calculator {
+}
+
+.calculator {
+    display: flex;
+    margin-bottom: 86px;
+    justify-content: space-between;
+}
+
+    .calculator .calculator__price {
+        font-size: 48px;
+        line-height: 145%;
+        margin-right: 10%;
+    }
+
+    .calculator .calculator__amount {
+        font-size: 48px;
+        line-height: 145%;
+    }
+
+    .calculator .calculator__left-btn {
+        font-size: 48px;
+        line-height: 145%;
+        width: 70px;
+        height: 70px;
+        background-color: #EDE5D8;
+        color: #F56457;
+        display: flex;
+        justify-content: center;
+    }
+
+    .calculator .calculator__right-btn {
+        font-size: 48px;
+        line-height: 145%;
+        width: 70px;
+        height: 70px;
+        background-color: #F56457;
+        color: #EDE5D8;
+        display: flex;
+        justify-content: center;
+        margin-right: 20%;
+    }
+
+
+@media (max-width: 1200px) {
+    .container-left .container-left__button--small {
+        padding: 26px;
+    }
+}
