@@ -1,6 +1,7 @@
 ﻿@page
 @model Slobodianiuk.University.Example.Web.Pages.FlowerListModel
 @{
+    ViewData["Title"] = "Flower List";
 }
 
 <div class="container px-4 py-5" id="custom-cards">
@@ -14,6 +15,9 @@
                             <h5 class="card-title">Name: @el.Name</h5>
                             <p class="card-text">Price: @el.price $</p>
                         </div>
+                        <a asp-page="/Order" asp-route-id="@el.Id" class="text-left">
+                            <button type="button" class="btn btn-outline-danger">Order</button>
+                        </a>
                     </div>
                 </div>
             }
