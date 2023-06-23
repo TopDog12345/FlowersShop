@@ -3,14 +3,31 @@
 @{
     ViewData["Title"] = "Home page";
 }
-
-    <div class="center-text">Мисюки ставте шейсят і я побіг🙏🙏🙏</div>
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary custom-bg">
+    <div class="col-md-6 p-lg-5 mx-auto my-5">
+        <h1 class="display-3 fw-bold text-white">Buy flowers for your beauty!</h1>
+        <div class="d-flex gap-3 justify-content-center lead fw-normal">
+            <a class="icon-link " style="color:azure; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);" href="/FlowerList">
+                <button class="btn btn-light">Press for Order</button>
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+        </div>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+</div>
 
 <style>
+    .custom-bg {
+        background-image: url("/img/login.png");
+        background-size: cover;
+        background-position: center;
+    }
 
-
-    .center-text {
-        text-align: center;
-        font-size: 24px;
+    .text-white {
+        color: #fff; /* Налаштуйте колір тексту за потребою */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        -webkit-text-stroke: 1px #000;
+        text-stroke: 1px #000;
     }
 </style>
