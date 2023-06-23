@@ -1,0 +1,133 @@
+﻿@font-face {
+    font-family: 'Glacial';
+    src: url("../fonts/GlacialIndifference-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nickainley';
+    src: url("../fonts/Nickainley-Normal.eot");
+    src: url("../fonts/Nickainley-Normal.woff") format('woff'), url("../fonts/Nickainley-Normal.woff2") format('woff2'), url("../fonts/Nickainley-Normal.otf") format('opentype'), url("../fonts/Nickainley-Normal.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Glacial', sans-serif;
+    border: none;
+    color: #393D50;
+}
+
+h1 {
+    font-family: 'Glacial', sans-serif;
+    font-size: 72px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 145%;
+}
+
+h2 {
+    font-family: 'Nickainley', sans-serif;
+    font-size: 144px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 110%;
+}
+
+
+
+
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    cursor: pointer;
+    color: #393D50;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+@media (max-width: 1284px) {
+    h2 {
+        font-size: 120px;
+    }
+}
+
+@media (max-width: 1073px) {
+    h2 {
+        font-size: 100px;
+    }
+}

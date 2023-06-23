@@ -1,0 +1,117 @@
+﻿@font-face {
+    font-family: 'Glacial';
+    src: url("../fonts/GlacialIndifference-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nickainley';
+    src: url("../fonts/Nickainley-Normal.eot");
+    src: url("../fonts/Nickainley-Normal.woff") format('woff'), url("../fonts/Nickainley-Normal.woff2") format('woff2'), url("../fonts/Nickainley-Normal.otf") format('opentype'), url("../fonts/Nickainley-Normal.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container-left .container-left__soc-net {
+}
+
+.soc-net {
+    display: flex;
+    justify-content: space-between;
+    width: 63.93%;
+    margin-bottom: 100px;
+}
+
+.soc-net__btn {
+    background-color: #EDE5D8;
+    width: 100px;
+    height: 100px;
+    color: #F7F6F4;
+}
+
+    .soc-net__btn:hover .soc-net__icon {
+        fill: #F56457;
+    }
+
+.container-left__p--orange {
+    color: #F56457;
+    cursor: pointer;
+}
+
+.p-arrow {
+    padding-left: 20px;
+}
+
+.page__left-arrow {
+    left: 52.57%;
+}
+
+.container-left__title {
+    margin-top: 10px;
+}
+
+.container-left__p {
+    margin-top: 20px;
+}
+
+#login-container {
+    text-align: left;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+    #login-container input,
+    #login-container button,
+    #login-container #google-login-container {
+        margin-top: 10px;
+    }
+
+#login-container {
+    width: 300px;
+    margin: 0 auto;
+    padding-left: 0px;
+}
+
+#google-login-container {
+    width: 300px;
+    margin: 0 auto;
+    padding-left: 10px
+}
+
+#google-login-button {
+    display: inline-block;
+    background-color: #db4437;
+    color: white;
+    padding-left: 0px border-radius: 2px;
+    cursor: pointer;
+}
+
+    #google-login-button:hover {
+        background-color: #F56457;
+    }
+
+.google-icon {
+    display: inline-block;
+    background-image: url('https://developers.google.com/identity/images/g-logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.google-text {
+    vertical-align: middle;
+}
+
+.container-left__ul {
+    margin-top: 10px;
+}
+
+.container-left__ul {
+    margin-bottom: 20px;
+}

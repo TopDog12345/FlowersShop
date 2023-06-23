@@ -1,0 +1,98 @@
+﻿@page
+@model Slobodianiuk.University.Example.Web.Pages.ContactsModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link property="stylesheet" rel="stylesheet" type="text/css" href="css/reset.css">
+    <link property="stylesheet" rel="stylesheet" type="text/css" href="css/styles.css">
+    <link property="stylesheet" rel="stylesheet" type="text/css" href="css/contacts.css">
+    <link rel="icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="canonical" href="http://flowerful-moments.com/contacts" />
+</head>
+<body class="page">
+    <header class="header page__header">
+        <div class="logo header__logo">
+            <a href="index.html"><img class="logo__image" src="img/logo.ico" alt="flowerful moments" /></a>
+        </div>
+        <nav class="nav header__nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="product.html">Product</a></li>
+                <li class="nav__item nav__item--bold"><a class="nav__link" href="contacts.html">About</a></li>
+                <li class="nav__item"><a class="nav__link" href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="phone header__phone">
+            <a class="phone__link" href="tel:+984563123500">
+                <svg class="phone__icon" width="21" height="21" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.8101 15.0367L15.584 14.325L12.6067 17.265C9.25287 15.5806 6.52682 12.8886 4.82109 9.57667L7.81012 6.625L7.08944 0.5H0.57974C-0.105492 12.3767 9.78311 22.1417 21.8101 21.465V15.0367Z" fill="#393D50" />
+                </svg>+380 990 579 100
+            </a>
+        </div>
+    </header>
+    <main class="main page__main">
+        <div class="container main__container main__container--active">
+            <div class="container-left container__container-left">
+                <div class="Choose the best way to login or create your own account!">
+                    <h2>About me!</h2>
+                </div>
+                <p class="container-left__p">In social networks, we give away prizes and discounts on purchases. Subscribe and follow us!</p>
+                <ul class="container-left__p">My name is Manuilyk Valeriy. I am a student of LNU of Franko</ul>
+                <ul class="container-left__ul">Here is my social media</ul>
+                <div class="soc-net container-left__soc-net">
+                    <a href="#" class="soc-net__link">
+                        <button class="soc-net__btn" type="button" name="instagram">
+                            <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="soc-net__icon" d="M41.24 9.56004C40.6071 9.56004 39.9884 9.74772 39.4622 10.0993C38.9359 10.451 38.5258 10.9507 38.2836 11.5355C38.0414 12.1202 37.978 12.7636 38.1015 13.3843C38.2249 14.0051 38.5297 14.5753 38.9772 15.0228C39.4248 15.4703 39.995 15.7751 40.6157 15.8986C41.2364 16.022 41.8798 15.9587 42.4646 15.7165C43.0493 15.4743 43.5491 15.0641 43.9007 14.5379C44.2523 14.0116 44.44 13.3929 44.44 12.76C44.44 11.9113 44.1028 11.0974 43.5027 10.4973C42.9026 9.89718 42.0887 9.56004 41.24 9.56004ZM53.5066 16.0134C53.4548 13.8008 53.0404 11.6118 52.28 9.53337C51.6019 7.75506 50.5466 6.14478 49.1866 4.81337C47.8662 3.44651 46.2521 2.39784 44.4666 1.74671C42.3937 0.963136 40.2022 0.539267 37.9866 0.493374C35.16 0.333374 34.2533 0.333374 27 0.333374C19.7466 0.333374 18.84 0.333374 16.0133 0.493374C13.7977 0.539267 11.6062 0.963136 9.53331 1.74671C7.75112 2.40444 6.13847 3.4522 4.81331 4.81337C3.44645 6.13385 2.39778 7.74788 1.74665 9.53337C0.963075 11.6063 0.539206 13.7978 0.493313 16.0134C0.333313 18.84 0.333313 19.7467 0.333313 27C0.333313 34.2534 0.333313 35.16 0.493313 37.9867C0.539206 40.2023 0.963075 42.3938 1.74665 44.4667C2.39778 46.2522 3.44645 47.8662 4.81331 49.1867C6.13847 50.5479 7.75112 51.5956 9.53331 52.2534C11.6062 53.0369 13.7977 53.4608 16.0133 53.5067C18.84 53.6667 19.7466 53.6667 27 53.6667C34.2533 53.6667 35.16 53.6667 37.9866 53.5067C40.2022 53.4608 42.3937 53.0369 44.4666 52.2534C46.2521 51.6022 47.8662 50.5536 49.1866 49.1867C50.5526 47.8603 51.6089 46.2486 52.28 44.4667C53.0404 42.3883 53.4548 40.1992 53.5066 37.9867C53.5066 35.16 53.6666 34.2534 53.6666 27C53.6666 19.7467 53.6666 18.84 53.5066 16.0134ZM48.7066 37.6667C48.6872 39.3594 48.3807 41.0366 47.8 42.6267C47.3742 43.7872 46.6903 44.8358 45.8 45.6934C44.935 46.5747 43.8886 47.2572 42.7333 47.6934C41.1432 48.2741 39.466 48.5806 37.7733 48.6C35.1067 48.7334 34.12 48.76 27.1066 48.76C20.0933 48.76 19.1066 48.76 16.44 48.6C14.6824 48.633 12.9322 48.3623 11.2666 47.8C10.1621 47.3416 9.1636 46.6608 8.33331 45.8C7.44822 44.9434 6.7729 43.8939 6.35998 42.7334C5.70893 41.1204 5.34783 39.4052 5.29331 37.6667C5.29331 35 5.13331 34.0134 5.13331 27C5.13331 19.9867 5.13331 19 5.29331 16.3334C5.30527 14.6029 5.62118 12.8879 6.22665 11.2667C6.69611 10.1411 7.41669 9.1378 8.33331 8.33337C9.14348 7.41649 10.1447 6.6883 11.2666 6.20004C12.8921 5.61349 14.6053 5.30692 16.3333 5.29337C19 5.29337 19.9866 5.13337 27 5.13337C34.0133 5.13337 35 5.13337 37.6666 5.29337C39.3594 5.31279 41.0365 5.61936 42.6266 6.20004C43.8385 6.64978 44.9261 7.38097 45.8 8.33337C46.6739 9.15252 47.3567 10.154 47.8 11.2667C48.3927 12.8905 48.6994 14.6048 48.7066 16.3334C48.84 19 48.8666 19.9867 48.8666 27C48.8666 34.0134 48.84 35 48.7066 37.6667ZM27 13.32C24.2955 13.3253 21.6532 14.1321 19.4071 15.6385C17.1609 17.1449 15.4117 19.2832 14.3803 21.7834C13.349 24.2835 13.0819 27.0333 13.6128 29.6852C14.1436 32.3371 15.4486 34.7721 17.3629 36.6827C19.2771 38.5932 21.7147 39.8934 24.3676 40.4191C27.0205 40.9448 29.7698 40.6723 32.2679 39.6361C34.766 38.6 36.901 36.8465 38.403 34.5975C39.905 32.3484 40.7066 29.7046 40.7066 27C40.7102 25.2003 40.3579 23.4177 39.67 21.7546C38.982 20.0915 37.9721 18.5809 36.6983 17.3095C35.4245 16.0382 33.9118 15.0312 32.2474 14.3465C30.583 13.6619 28.7997 13.313 27 13.32ZM27 35.88C25.2437 35.88 23.5268 35.3592 22.0665 34.3835C20.6062 33.4077 19.468 32.0209 18.7959 30.3983C18.1238 28.7757 17.948 26.9902 18.2906 25.2676C18.6332 23.5451 19.479 21.9628 20.7209 20.7209C21.9628 19.479 23.545 18.6333 25.2676 18.2907C26.9901 17.948 28.7756 18.1239 30.3982 18.796C32.0208 19.4681 33.4077 20.6063 34.3834 22.0666C35.3592 23.5269 35.88 25.2437 35.88 27C35.88 28.1662 35.6503 29.3209 35.204 30.3983C34.7578 31.4756 34.1037 32.4546 33.2791 33.2792C32.4545 34.1037 31.4756 34.7578 30.3982 35.2041C29.3208 35.6504 28.1661 35.88 27 35.88Z" fill="#F7F6F4" />
+                            </svg>
+                        </button>
+                    </a>
+                    </button></a>
+                    <a href="#" class="soc-net__link">
+                        <button class="soc-net__btn" type="button" name="google">
+                            <svg width="36" height="64" viewBox="0 0 36 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="soc-net__icon" d="M32.8921 36L34.6701 24.418H23.5561V16.902C23.5561 13.734 25.1081 10.644 30.0861 10.644H35.1381V0.783953C35.1381 0.783953 30.5541 0.00195312 26.1701 0.00195312C17.0181 0.00195312 11.0361 5.54995 11.0361 15.592V24.42H0.862061V36.002H11.0361V64.002H23.5561V36.002L32.8921 36Z" fill="#F7F6F4" />
+                            </svg>
+                        </button>
+                    </a>
+
+                </div>
+                <p class="container-left__p container-left__p--orange" onclick="next(1)">
+                    Did not find a suitable bouquet?
+                    <svg class="p-arrow" width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.7071 8.70711C23.0976 8.31658 23.0976 7.68342 22.7071 7.29289L16.3431 0.928932C15.9526 0.538408 15.3195 0.538408 14.9289 0.928932C14.5384 1.31946 14.5384 1.95262 14.9289 2.34315L20.5858 8L14.9289 13.6569C14.5384 14.0474 14.5384 14.6805 14.9289 15.0711C15.3195 15.4616 15.9526 15.4616 16.3431 15.0711L22.7071 8.70711ZM0 9L22 9V7L0 7L0 9Z" fill="#F56457" />
+                    </svg>
+                </p>
+
+            </div>
+            <div class="container-right container__container-right">
+                <img class="container-right__image" src="img/contacts.jpg" alt="contacts" />
+            </div>
+        </div>
+        <div class="container main__container">
+            <div class="container-left container__container-left">
+                <div class="container-left__title">
+                    <h2>Call back</h2>
+                </div>
+                <p class="container-left__p">A mini bouquet, in honor of February 14, will give your loved ones a lot of smiles.</p>
+                <a class="container__link" href="/product.html"><button class="button container-left__button">Buy flowers</button></a>
+            </div>
+            <div class="container-right container__container-right">
+                <img class="container-right__image" src="images/call-back.png" alt="call-back" />
+            </div>
+            <button type="button" name="back" class="left-arrow page__left-arrow" onclick="next(-1)">
+                <svg width="53" height="38" viewBox="0 0 53 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.23223 17.2322C0.255924 18.2085 0.255924 19.7915 1.23223 20.7678L17.1421 36.6777C18.1184 37.654 19.7014 37.654 20.6777 36.6777C21.654 35.7014 21.654 34.1184 20.6777 33.1421L6.53553 19L20.6777 4.85787C21.654 3.88156 21.654 2.29864 20.6777 1.32233C19.7014 0.346023 18.1184 0.346023 17.1421 1.32233L1.23223 17.2322ZM53 16.5L3 16.5L3 21.5L53 21.5L53 16.5Z" fill="#EDE5D8" />
+                </svg>
+            </button>
+        </div>
+    </main>
+
+    <script src="js/slider.js"></script>
+</body>
+</html>
